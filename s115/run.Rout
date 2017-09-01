@@ -1,0 +1,134 @@
+
+R Under development (unstable) (2017-07-18 r72928) -- "Unsuffered Consequences"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ## scrape vote information from NYTimes
+> chamber <- "Senate"
+> congress <- 115
+> 
+> source("../utilities/utilities.R")
+> 
+> source("readVotes.R")
+trying URL 'https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_115_1.xml'
+Content type 'text/html' length 33742 bytes (32 KB)
+==================================================
+downloaded 32 KB
+
+Space required after the Public Identifier
+StartTag: invalid element name
+Opening and ending tag mismatch: link line 30 and head
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Opening and ending tag mismatch: header line 59 and div
+xmlParseEntityRef: no name
+xmlParseEntityRef: no name
+Opening and ending tag mismatch: input line 154 and nav
+Opening and ending tag mismatch: nav line 153 and div
+Opening and ending tag mismatch: div line 150 and header
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Opening and ending tag mismatch: hr line 308 and section
+Opening and ending tag mismatch: INPUT line 324 and form
+Opening and ending tag mismatch: input line 323 and li
+Opening and ending tag mismatch: img line 329 and a
+Opening and ending tag mismatch: a line 329 and form
+Opening and ending tag mismatch: form line 328 and li
+Opening and ending tag mismatch: span line 336 and li
+Opening and ending tag mismatch: li line 333 and ul
+Entity 'nbsp' not defined
+Opening and ending tag mismatch: li line 328 and div
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Opening and ending tag mismatch: br line 386 and div
+Opening and ending tag mismatch: br line 366 and main
+Opening and ending tag mismatch: br line 417 and a
+Opening and ending tag mismatch: a line 417 and h3
+Opening and ending tag mismatch: h3 line 417 and div
+xmlParseEntityRef: no name
+xmlParseEntityRef: no name
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Entity 'nbsp' not defined
+Opening and ending tag mismatch: div line 398 and footer
+Opening and ending tag mismatch: footer line 397 and body
+Opening and ending tag mismatch: div line 350 and html
+Premature end of data in tag input line 322
+Premature end of data in tag input line 321
+Premature end of data in tag input line 320
+Premature end of data in tag form line 319
+Premature end of data in tag li line 319
+Premature end of data in tag ul line 317
+Premature end of data in tag P line 313
+Premature end of data in tag section line 303
+Premature end of data in tag div line 302
+Premature end of data in tag main line 301
+Premature end of data in tag body line 58
+Premature end of data in tag link line 29
+Premature end of data in tag link line 28
+Premature end of data in tag link line 27
+Premature end of data in tag link line 26
+Premature end of data in tag link line 25
+Premature end of data in tag link line 24
+Premature end of data in tag link line 23
+Premature end of data in tag link line 22
+Premature end of data in tag link line 21
+Premature end of data in tag link line 20
+Premature end of data in tag meta line 18
+Premature end of data in tag meta line 17
+Premature end of data in tag meta line 16
+Premature end of data in tag meta line 15
+Premature end of data in tag meta line 14
+Premature end of data in tag meta line 13
+Premature end of data in tag meta line 12
+Premature end of data in tag meta line 11
+Premature end of data in tag meta line 10
+Premature end of data in tag meta line 9
+Premature end of data in tag META line 8
+Premature end of data in tag head line 7
+Premature end of data in tag html line 5
+Error: 1: Space required after the Public Identifier
+2: StartTag: invalid element name
+3: Opening and ending tag mismatch: link line 30 and head
+4: Entity 'nbsp' not defined
+5: Entity 'nbsp' not defined
+6: Opening and ending tag mismatch: header line 59 and div
+7: xmlParseEntityRef: no name
+8: xmlParseEntityRef: no name
+9: Opening and ending tag mismatch: input line 154 and nav
+10: Opening and ending tag mismatch: nav line 153 and div
+11: Opening and ending tag mismatch: div line 150 and header
+12: Entity 'nbsp' not defined
+13: Entity 'nbsp' not defined
+14: Opening and ending tag mismatch: hr line 308 and section
+15: Opening and ending tag mismatch: INPUT line 324 and form
+16: Opening and ending tag mismatch: input line 323 and li
+17: Opening and ending tag mismatch: img line 329 and a
+18: Opening and ending tag mismatch: a line 329 and form
+19: Opening and ending tag mismatch: form line 328 and li
+20: Opening and ending tag mismatch: span line 336 and li
+21: Opening and ending tag mi
+Execution halted
