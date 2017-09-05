@@ -1,5 +1,4 @@
 language: r
-cache: packages
 # only run CI-builds on master branch
 branches:
   only:
