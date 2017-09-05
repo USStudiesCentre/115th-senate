@@ -1,7 +1,9 @@
-language: ruby
+language: r
+cache: packages
 # only run CI-builds on master branch
 branches:
   only:
   - master
 rvm:
 - 2.2.3
+sudo: false
